@@ -10,7 +10,8 @@
 Доступ к базе осуществляется с помощью команды psql -U morty -d scooter_rent. Пароль: smith.
 У psql есть особенность: если таблица в базе данных с большой буквы, то её в запросе нужно брать в кавычки. Например, select * from “Orders”.
 
-Запрос: SELECT track, (CASE WHEN finished=true THEN 2 WHEN cancelled=true THEN -1 WHEN "inDelivery"=true THEN 1 ELSE 0 END) AS status 
+Запрос: 
+SELECT track, (CASE WHEN finished=true THEN 2 WHEN cancelled=true THEN -1 WHEN "inDelivery"=true THEN 1 ELSE 0 END) AS status 
 FROM "Orders";
 
-Результат запроса: ![alt text](<Задание 2.png>)
+Результаты запроса ![alt text](<Задание 2.png>)

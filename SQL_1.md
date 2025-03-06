@@ -8,4 +8,4 @@ FROM "Couriers" C JOIN "Orders" O ON C.id = O."courierId"
 WHERE O."inDelivery" = TRUE 
 GROUP BY C.login;
 
-Результат запроса:![alt text](<Задание 1.png>)
+Результаты запроса ![alt text](<Задание 1.png>)
